@@ -1,5 +1,15 @@
 .container {
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--app-background-color);
+  width: 100vw;
+  height: 100vh;
+  // background-color: var(--app-background-color);
+
+  .text {
+    font-family: var(--font-family-text-level-1);
+  }
+  .text-2 {
+    font-family: var(--font-family-text-level-2);
+  }
+  .text-3 {
+    font-family: var(--font-family-text-level-3);
+  }
 }

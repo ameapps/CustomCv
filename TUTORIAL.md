@@ -13,3 +13,8 @@
 - verà farra una redirect
 - copiare il link finale 
 - creare un iframe
+
+## COME AGGIUNGERE FONT A PROGETTO ANGULAR 
+- cercare su google fonts il font desiderato 
+- inserire nel file index.html i link href del font 
+- nel styles.scss mettere nel body -> font-family: nome-font
