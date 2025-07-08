@@ -1,21 +1,33 @@
 <div class="container">
-    <div class="drag">
-        Ciao come stai?
-    </div>
-    <div class="menu">
-        <span class="text"> <span class="inner-text">{{ 'HEADER.ABOUT' | translate }}</span></span>
-        <span class="text"> <span class="inner-text">{{ 'HEADER.SKILLS' | translate }}</span></span>
-        <span class="text"> <span class="inner-text">{{ 'HEADER.WORK' | translate }}</span></span>
-        <span class="text"> <span class="inner-text">{{ 'HEADER.PROJECT' | translate }}</span></span>
-        <span class="text"> <span class="inner-text">{{ 'HEADER.CONTACT' | translate }}</span></span>
-        <span class="text"> <span class="inner-text">{{ 'HEADER.CV' | translate }}</span></span>
-    </div>
+  <div class="drag">Ciao come stai?</div>
+  <div class="menu">
+    <span class="text">
+      <span class="inner-text" routerLink="/about">{{
+        "HEADER.ABOUT" | translate
+      }}</span></span
+    >
+    <span class="text">
+      <span class="inner-text" routerLink="/skills">{{
+        "HEADER.SKILLS" | translate
+      }}</span></span
+    >
+    <span class="text">
+      <span class="inner-text" routerLink="/experiences">{{
+        "HEADER.WORK" | translate
+      }}</span></span
+    >
+    <span class="text">
+      <span class="inner-text" routerLink="/projects">{{
+        "HEADER.PROJECT" | translate
+      }}</span></span
+    >
+    <span class="text">
+      <span class="inner-text" routerLink="/contacts">{{
+        "HEADER.CONTACT" | translate
+      }}</span></span
+    >
+    <span class="text">
+      <span class="inner-text">{{ "HEADER.CV" | translate }}</span></span
+    >
+  </div>
 </div>
-
-
-
-
-
-
-
-
