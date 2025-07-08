@@ -1,3 +1,10 @@
 {
-    "GREET": "HELLO"
+    "HEADER": {
+        "ABOUT": "About",
+        "SKILLS": "Skills",
+        "WORK": "Experiences",
+        "PROJECT": "Project",
+        "CONTACT": "Contact",
+        "CV": "CV"
+    }
 }

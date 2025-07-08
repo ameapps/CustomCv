@@ -1,3 +1,10 @@
 {
-    "GREET": "ciao"
+    "HEADER": {
+        "ABOUT": "Presentazione",
+        "SKILLS": "Abilità",
+        "WORK": "Esperienze",
+        "PROJECT": "Progetti",
+        "CONTACT": "Contatti",
+        "CV": "CV"
+    }
 }
