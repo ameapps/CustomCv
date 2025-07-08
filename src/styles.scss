@@ -1,7 +1,12 @@
 :root {
   /* You can add global styles to this file, and also import other style files */
   --app-background-color: #0c0c0c;
-  --font-family-text-level-1: 'Fira Sans', sans-serif;
-  --font-family-text-level-2: 'Comfortaa', sans-serif;
-  --font-family-text-level-3: 'Source Code Pro', monospace;
+  --font-family-text-level-1: "Fira Sans", sans-serif;
+  --font-family-text-level-2: "Comfortaa", sans-serif;
+  --font-family-text-level-3: "Source Code Pro", monospace;
+
+  body {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 }
