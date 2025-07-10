@@ -1,33 +1,39 @@
 <div class="container">
-  <div class="drag">Ciao come stai?</div>
+  <div class="drag">DRAG ANYWHERE</div>
   <div class="menu">
     <span class="text">
-      <span class="inner-text" routerLink="/about">{{
-        "HEADER.ABOUT" | translate
+      <span class="inner-text" routerLink="/about">
+        <span class="number">0. </span>
+        {{"HEADER.ABOUT" | translate}}</span></span
+    >
+    <span class="text">
+      <span class="inner-text" routerLink="/skills">
+        <span class="number">1. </span>
+        {{"HEADER.SKILLS" | translate
       }}</span></span
     >
     <span class="text">
-      <span class="inner-text" routerLink="/skills">{{
-        "HEADER.SKILLS" | translate
+      <span class="inner-text" routerLink="/experiences">
+        <span class="number">2. </span>
+        {{"HEADER.WORK" | translate
       }}</span></span
     >
     <span class="text">
-      <span class="inner-text" routerLink="/experiences">{{
-        "HEADER.WORK" | translate
+      <span class="inner-text" routerLink="/projects">
+        <span class="number">3. </span>
+        {{"HEADER.PROJECT" | translate
       }}</span></span
     >
     <span class="text">
-      <span class="inner-text" routerLink="/projects">{{
-        "HEADER.PROJECT" | translate
+      <span class="inner-text" routerLink="/contacts">
+        <span class="number">4. </span>
+        {{"HEADER.CONTACT" | translate
       }}</span></span
     >
     <span class="text">
-      <span class="inner-text" routerLink="/contacts">{{
-        "HEADER.CONTACT" | translate
-      }}</span></span
-    >
-    <span class="text">
-      <span class="inner-text">{{ "HEADER.CV" | translate }}</span></span
+      <span class="inner-text">
+        <span class="number">5. </span>
+        {{ "HEADER.CV" | translate }}</span></span
     >
   </div>
 </div>
