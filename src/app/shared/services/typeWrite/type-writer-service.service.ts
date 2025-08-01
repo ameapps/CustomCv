@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class TypewriterService {
-
+  
   /**
    * Esegue scrittura simulata di un testo.
    * @param text Testo completo da scrivere.

@@ -12,7 +12,9 @@ export class HomeComponent implements OnInit {
   texts: HomeTexts = {
     name: '',
     shortDescr: '',
-    longDescr: ''
+    longDescr: `Self-taught programmer motivated by passion and personal projects. Expert
+    of searching bugs on Google and quickly scanning the best StackOverflow
+    answers.`
   }
 
   constructor(private typewriterService: TypewriterService) { }
@@ -22,7 +24,6 @@ export class HomeComponent implements OnInit {
     await this.writeTextAutomatically('Code Wizard', 'shortDescr');
     await this.writeTextAutomatically('Software Engineer', 'shortDescr');
     await this.writeTextAutomatically('Expert AI user', 'shortDescr');
-    await this.writeTextAutomatically('Web Developer', 'shortDescr');
   }
 
   private async writeTextAutomatically(finalText: string, refText: keyof HomeTexts): Promise<void> {
