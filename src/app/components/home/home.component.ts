@@ -17,26 +17,30 @@ export class HomeComponent implements OnInit {
 
   constructor(private typewriterService: TypewriterService) { }
 
-  ngOnInit(): void {
-    this.writeTextAutomatically('Boss', 'name');
-    // this.writeTextAutomatically('Code Wizard', 'shortDescr');
-    // this.writeTextAutomatically('Software Engenieer', 'shortDescr');
-    // this.writeTextAutomatically('Web Developer', 'shortDescr');
+  async ngOnInit(): Promise<void> {
+    await this.writeTextAutomatically('Boss', 'name');
+    await this.writeTextAutomatically('Code Wizard', 'shortDescr');
+    await this.writeTextAutomatically('Software Engenieer', 'shortDescr');
+    await this.writeTextAutomatically('Web Developer', 'shortDescr');
   }
 
-  private writeTextAutomatically(finalText: string, refText: keyof HomeTexts) {
+  private async writeTextAutomatically(finalText: string, refText: keyof HomeTexts): Promise<void> {
     try {
       const fullText = finalText;
-      this.typewriterService.typeText(
-        fullText,
-        (current) => {
-          this.texts[refText] = current;
-        },
-        80, // velocità in ms
-        () => {
-          console.log('Scrittura completata!');
-        }
-      );
+  
+      await new Promise<void>((resolve, reject) => {
+        this.typewriterService.typeText(
+          fullText,
+          (current) => {
+            this.texts[refText] = current;
+          },
+          80, // velocità in ms
+          () => {
+            console.log('Scrittura completata!');
+            resolve(); // risolve la Promise
+          }
+        );
+      });
     } catch (error) {
       console.error(error);
     }
