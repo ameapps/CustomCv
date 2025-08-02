@@ -34,6 +34,9 @@ useHash: false: https://example.com/about
 useHash: true: https://example.com/#/about
 *cioè*
 usare l’hash serve a farein modo che il routing non sia gestito dal server web, ma sia gestito dall'app angular. 
+*questo perchè*
+Il server web può essere configurato per cercare i file del sito in una cartella. 
+ES: è possibile indicare in IIS in quale cartella sono presenti i file del progetto (come ../app oppure../ oppure ../app/ste/ ecc)
 
 ## COME PUBBLICARE SU GITHUB 
 - controllare nell'app routing ci sia la voce per l'hash per la gestione delle rotte 
