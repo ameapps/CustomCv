@@ -19,11 +19,26 @@ export class HomeComponent implements OnInit {
 
   constructor(private typewriterService: TypewriterService) { }
 
+  async cycleTexts(): Promise<void> {
+    const texts = [
+      'CODE WIZARD',
+      'SOFTWARE ENGINEER',
+      'EXPERT AI USER'
+    ];
+    let index = 0;
+    //Eseguo la scrittura del testo in loop 
+    const loop = async () => {
+      await this.writeTextAutomatically(texts[index], 'shortDescr');
+      index = (index + 1) % texts.length;
+      setTimeout(loop, 1000); // tempo di pausa dopo la scrittura, non fissa
+    };
+    // inizia il ciclo
+    loop(); 
+  }
+  
   async ngOnInit(): Promise<void> {
     await this.writeTextAutomatically('Boss', 'name');
-    await this.writeTextAutomatically('CODE WIZARD', 'shortDescr');
-    await this.writeTextAutomatically('SOFTWARE ENGINEER', 'shortDescr');
-    await this.writeTextAutomatically('EXPERT AI USER', 'shortDescr');
+    this.cycleTexts();
   }
 
   private async writeTextAutomatically(finalText: string, refText: keyof HomeTexts): Promise<void> {
