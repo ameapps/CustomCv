@@ -21,9 +21,9 @@ export class HomeComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     await this.writeTextAutomatically('Boss', 'name');
-    await this.writeTextAutomatically('Code Wizard', 'shortDescr');
-    await this.writeTextAutomatically('Software Engineer', 'shortDescr');
-    await this.writeTextAutomatically('Expert AI user', 'shortDescr');
+    await this.writeTextAutomatically('CODE WIZARD', 'shortDescr');
+    await this.writeTextAutomatically('SOFTWARE ENGINEER', 'shortDescr');
+    await this.writeTextAutomatically('EXPERT AI USER', 'shortDescr');
   }
 
   private async writeTextAutomatically(finalText: string, refText: keyof HomeTexts): Promise<void> {

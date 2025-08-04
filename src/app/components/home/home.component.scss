@@ -8,12 +8,28 @@
   align-items: center;
   flex-direction: column;
   .text-box {
+    position: relative;
+    left: 10%;
     .name {
       font-size: 3.25rem;
       letter-spacing: -0.02em;
-      font-weight: 600;
       text-shadow: rgb(242, 255, 91) 2.6px 0px 10.4px;
       color: rgb(242 255 91 / 1);
+      font-family: var(--font-family-text-level-2);
+      font-weight: 700;
+    }
+
+    #dynamic-text {
+      font-weight: 300;
+      font-size: 54px;
+      font-family: var(--font-family-text-level-3);
+      color: #89ff69;
+      box-shadow: rgba(137, 255, 105, 0.42);
+    }
+
+    #long-descr {
+      font-size: 24px;
+      font-family: var(--font-family-text-level-1);
     }
   }
 }
