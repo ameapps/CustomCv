@@ -28,9 +28,26 @@
     }
 
     #long-descr {
-      font-size: 24px;
+      font-size: 36px;
       font-family: var(--font-family-text-level-1);
       color: #e1e1e1;
+    }
+    #contact {
+      border-radius: .5rem;
+      font-size: 2.25rem;
+      font-weight: 500;
+      font-family: var(--font-family-text-level-1);
+      color: #0c0c0c;
+      background-color: #f2ff5b;
+    }
+
+    #learn { 
+      border-radius: .5rem;     
+      font-size: 2.25rem;
+      font-weight: 500;
+      font-family: var(--font-family-text-level-1);
+      color: #f2ff5b;
+      background-color: #0c0c0c;
     }
   }
 }
