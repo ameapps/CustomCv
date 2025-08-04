@@ -19,7 +19,7 @@
       font-weight: 700;
     }
 
-    #dynamic-text {
+    #short-text {
       font-weight: 300;
       font-size: 54px;
       font-family: var(--font-family-text-level-3);
@@ -30,6 +30,7 @@
     #long-descr {
       font-size: 24px;
       font-family: var(--font-family-text-level-1);
+      color: #e1e1e1;
     }
   }
 }
