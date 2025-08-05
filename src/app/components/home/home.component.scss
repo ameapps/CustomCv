@@ -74,4 +74,17 @@
       }
     }
   }
+
+  .effect {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #89ff69;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #89ff69;
+    animation: move-dot 3s infinite ease-in-out alternate;
+    top: 10%;
+    left: 10%;
+  }
+  
 }
