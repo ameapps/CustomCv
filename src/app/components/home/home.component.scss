@@ -27,7 +27,7 @@
       font-weight: 300;
       font-size: 54px;
       font-family: var(--font-family-text-level-3);
-      color: var(--text-color-secondary);
+      color: var(--color-secondary);
       box-shadow: rgba(137, 255, 105, 0.42);
       margin: 0 !important;
     }
@@ -51,8 +51,8 @@
         font-weight: 500;
         font-family: var(--font-family-text-level-1);
         color: #0c0c0c;
-        background-color: var(--text-color-primary);
-        border: solid 1px var(--text-color-primary);
+        background-color: var(--color-primary);
+        border: solid 1px var(--color-primary);
       }
   
       #learn { 
@@ -60,17 +60,17 @@
         font-size: 2.25rem;
         font-weight: 500;
         font-family: var(--font-family-text-level-1);
-        color: var(--text-color-primary);
+        color: var(--color-primary);
         background-color: var(--app-background-color);
-        border: solid 1px var(--text-color-primary);
+        border: solid 1px var(--color-primary);
       }
 
       /** I bottoni si illuminano quando gli passo sopra*/
       #contact:hover, #learn:hover {
-        background-color: var(--text-color-primary);
+        background-color: var(--color-primary);
         color: var(--app-background-color);
         cursor: pointer;
-        box-shadow: 0 0 24px 2px var(--text-color-primary);
+        box-shadow: 0 0 24px 2px var(--color-primary);
       }
     }
   }
@@ -79,10 +79,10 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: var(--text-color-secondary);
+    background-color: var(--color-secondary);
     border-radius: 50%;
-    box-shadow: 0 0 10px var(--text-color-secondary);
-    box-shadow: 0 0 24px 2px var(--text-color-primary);
+    box-shadow: 0 0 10px var(--color-secondary);
+    box-shadow: 0 0 24px 2px var(--color-primary);
     animation: move-dot 3s infinite ease-in-out alternate;
     top: 10%;
     left: 10%;
