@@ -48,3 +48,5 @@ Dove:
 https://nome-utente-github.github.io/nome-branch
 ES LINK FUNZIONANTE: https://stefanoyoyo.github.io/CustomCv/#/homepage
 
+## COME MUOVERSI NEL PROGETTO DA STACKBLITS 
+https://customcv-naet--4200--96435430.local-corp.webcontainer.io/#/skills

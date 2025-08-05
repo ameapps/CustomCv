@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { HomeTexts } from 'src/app/shared/models/home/home-texts';
 import { TypewriterService } from 'src/app/shared/services/typeWrite/type-writer-service.service';
 
@@ -17,7 +18,7 @@ export class HomeComponent implements OnInit {
     answers.`
   }
 
-  constructor(private typewriterService: TypewriterService) { }
+  constructor(private typewriterService: TypewriterService, private router: Router) { }
 
   async cycleTexts(): Promise<void> {
     const texts = [
@@ -61,5 +62,9 @@ export class HomeComponent implements OnInit {
     } catch (error) {
       console.error(error);
     }
+  }
+
+  public learnMore() {
+
   }
 }
