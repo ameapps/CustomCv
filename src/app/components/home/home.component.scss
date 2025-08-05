@@ -41,6 +41,7 @@
     .buttons {
       display: flex;
       flex-direction: row;
+      column-gap: 1em;
       #contact {
         border-radius: .5rem;
         font-size: 2.25rem;
@@ -48,6 +49,7 @@
         font-family: var(--font-family-text-level-1);
         color: #0c0c0c;
         background-color: #f2ff5b;
+        border: solid 1px #f2ff5b;
       }
   
       #learn { 
@@ -57,8 +59,16 @@
         font-family: var(--font-family-text-level-1);
         color: #f2ff5b;
         background-color: #0c0c0c;
+        border: solid 1px #f2ff5b;
+      }
+
+      /** I bottoni si illuminano quando gli passo sopra*/
+      #contact:hover, #learn:hover {
+        background-color: #f2ff5b;
+        color: #0c0c0c;
+        cursor: pointer;
+        box-shadow: 0 0 24px 2px #f2ff5b;
       }
     }
   }
-
 }
