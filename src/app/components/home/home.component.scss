@@ -38,7 +38,10 @@
       color: #e1e1e1;
       margin: 0 !important;
     }
+
     .buttons {
+      position: relative;
+      top:1em;
       display: flex;
       flex-direction: row;
       column-gap: 1em;
