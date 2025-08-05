@@ -64,7 +64,8 @@ export class HomeComponent implements OnInit {
     }
   }
 
+  /**Method opening the given linkedIn profile! */
   public learnMore() {
-
+    console.warn('TODO!')
   }
 }

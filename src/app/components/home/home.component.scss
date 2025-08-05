@@ -35,8 +35,12 @@
     #long-descr {
       font-size: 36px;
       font-family: var(--font-family-text-level-1);
-      color: #e1e1e1;
+      color: var(--color-thirdy);
       margin: 0 !important;
+    }
+
+    .text {
+      user-select: none;
     }
 
     .buttons {
@@ -50,7 +54,7 @@
         font-size: 2.25rem;
         font-weight: 500;
         font-family: var(--font-family-text-level-1);
-        color: #0c0c0c;
+        color: var(--app-background-color);
         background-color: var(--color-primary);
         border: solid 1px var(--color-primary);
       }
