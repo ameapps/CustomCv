@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
 
+    //Sezione di DX
     .left {
         width: 100%; 
         display: flex;
@@ -36,6 +37,8 @@
             }
         }
     }
+
+    //Sezione di SX
     .right {
         width: 100%;
         display: flex;
@@ -46,6 +49,7 @@
             flex-direction: row;
             justify-content: space-between;
             margin: 2em;
+            max-width: 300px;
             .langs-left {
                 display: flex;
                 flex-direction: column;
@@ -64,5 +68,11 @@
                 font-family: var(--font-family-text-level-1);
             }
         }
+    }
+    //Icona e testo in riga
+    .lang {
+        display: flex;
+        flex-direction: row;
+        column-gap: 0.75em;
     }
 }
