@@ -1,5 +1,4 @@
 {
-  "appsettings": "WORKS!",
   "common": {
     "header": {
       "can_show_drag_text": false
