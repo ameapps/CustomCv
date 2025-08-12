@@ -9,6 +9,11 @@
     },
     "PAGES": {
         "HOME": {
+            "DYNAMIC": {
+                "TEXT_1": "CODE WIZARD",
+                "TEXT_2": "SOFTWARE ENGINEER",
+                "TEXT_3": "EXPERT AI USER"
+            },
             "CONTACT_ME": "Contact me",
             "LEARN": "Learn more"
         },

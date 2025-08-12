@@ -16,7 +16,9 @@ export class DefaultConfigPages {
     skills!: DefaultConfigPagesSkills;
 };
 
-export class DefaultConfigPagesHome {}
+export class DefaultConfigPagesHome {
+    name!: string;
+}
 export class DefaultConfigPagesAbout {}
 export class DefaultConfigPagesContact {}
 export class DefaultConfigPagesExperience {}

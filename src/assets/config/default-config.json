@@ -5,7 +5,9 @@
     }
   },
   "pages": {
-    "home": {},
+    "home": {
+      "name": "Stefano"
+    },
     "about": {},
     "contact": {},
     "experience": {},

@@ -9,6 +9,11 @@
     },
     "PAGES": {
         "HOME": {
+            "DYNAMIC": {
+                "TEXT_1": "MAGO DEL CODICE",
+                "TEXT_2": "INGEGNERE DEL SOFTWARE",
+                "TEXT_3": "ESPERTO UTILIZZATORE DI IA"
+            },            
             "CONTACT_ME": "Contattami",
             "LEARN": "Scopri di più"
         },

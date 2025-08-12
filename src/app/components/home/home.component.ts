@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { HomeTexts } from 'src/app/shared/models/home/home-texts';
+import { CommonService } from 'src/app/shared/services/common/common.service';
 import { TypewriterService } from 'src/app/shared/services/typeWrite/type-writer-service.service';
 
 @Component({
@@ -19,7 +20,7 @@ export class HomeComponent implements OnInit {
     answers.`
   }
 
-  constructor(private translate: TranslateService, private typewriterService: TypewriterService, private router: Router) { }
+  constructor(private translate: TranslateService, private common: CommonService, private typewriterService: TypewriterService, private router: Router) { }
 
   async cycleTexts(): Promise<void> {
     const texts = [
@@ -39,8 +40,10 @@ export class HomeComponent implements OnInit {
   }
   
   async ngOnInit(): Promise<void> {
-    await this.writeTextAutomatically('Boss', 'name');
-    this.cycleTexts();
+    setTimeout(async () => {
+      await this.writeTextAutomatically(this.common.appConfig.pages.home.name, 'name');
+      this.cycleTexts();
+    }, 500); //Timer per dare il tempo di caricare la config dagli assets
   }
 
   private async writeTextAutomatically(finalText: string, refText: keyof HomeTexts): Promise<void> {
