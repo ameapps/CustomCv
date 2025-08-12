@@ -6,5 +6,13 @@
         "PROJECT": "Progetti",
         "CONTACT": "Contatti",
         "CV": "CV"
+    },
+    "PAGES": {
+        "HOME": {},
+        "ABOUT": {},
+        "CONTACT": {},
+        "EXPERIENCE": {},
+        "PROJECT": {},
+        "SKILLS": {}
     }
 }
