@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
   displayedText = '';
 
   constructor(
-    private translate: TranslateService,
     private http_service: HttpClient,
     private typewriterService: TypewriterService,
     private common: CommonService
