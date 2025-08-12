@@ -1,3 +1,16 @@
 {
-  "appsettings": "WORKS!"
+  "appsettings": "WORKS!",
+  "common": {
+    "header": {
+      "can_show_drag_text": false
+    }
+  },
+  "pages": {
+    "home": {},
+    "about": {},
+    "contact": {},
+    "experience": {},
+    "project": {},
+    "skills": {}
+  }
 }
