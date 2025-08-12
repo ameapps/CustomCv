@@ -2,9 +2,11 @@
   <div class="text-box">
     <p class="name text">{{texts.name}}</p>
     <p id="short-text" class="text">{{ texts.shortDescr}}</p>
-    <p id="long-descr" class="text">
-      {{ texts.longDescr }}
-    </p>
+    <div class="long-text-container">
+      <p id="long-descr" class="text">
+        {{ texts.longDescr }}
+      </p>
+    </div>
     <div class="buttons">
       <button id="contact" routerLink="/#/contacts">Contact me</button>
       <button id="learn" (click)="learnMore()">Learn more</button>

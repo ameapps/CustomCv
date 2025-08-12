@@ -32,11 +32,14 @@
       margin: 0 !important;
     }
 
-    #long-descr {
-      font-size: 36px;
-      font-family: var(--font-family-text-level-1);
-      color: var(--color-thirdy);
-      margin: 0 !important;
+    .long-text-container {
+      width: 75%;
+      #long-descr {
+        font-size: 24px;
+        font-family: var(--font-family-text-level-1);
+        color: var(--color-thirdy);
+        margin: 0 !important;
+      }
     }
 
     .text {
